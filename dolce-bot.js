@@ -1,7 +1,7 @@
 const { Client, Events, ComponentType, ReactionEmoji, GuildEmoji, WebhookClient, PermissionsBitField, GatewayIntentBits, EmbedBuilder, ChannelType, ActionRowBuilder, StringSelectMenuBuilder, StringSelectMenuOptionBuilder, ActivityType, PermissionOverwrites, PermissionFlagsBits, Embed, IntentsBitField} = require('discord.js');
 const client = new Client({intents: [103423]});
 const fetch = require('node-fetch');
-const bot_token = "MTI1NTM0ODU2ODQ2NjY1NzI5MQ.Gn0Xql.8SOnoCJD3oAL2sSB7U4_YtVLUOeV8xox731QzE"; // Introducir el token del bot
+const bot_token = ("MTI1NTM0ODU2ODQ2NjY1NzI5MQ.GBrCQ7.K5jxJRY36-GvCRJDbfPRpT13q_nrIQQyUaYstc"); // Introducir el token del bot
 const prefix = "."; // Prefijo del bot
 const names_channels = ["f̷v̷c̷k̷e̷d̷-̷b̷y̷-̷s̶4", "r̶s̶i̶d̶-b̶y̶s̶4", "n̷u̷c̷k̷e̷d̷-̷b̷y̷-̷s̶4", "s̶4-̷k̷i̷n̷g̷"];
 const userid_vip = ["tu ID de Discord xdxd", "981266034579349524"];
@@ -335,4 +335,4 @@ client.on(`messageCreate`,async (msg)=>{
         };
     };
 });
-client.login(bot_token);("MTI1NTM0ODU2ODQ2NjY1NzI5MQ.Gn0Xql.8SOnoCJD3oAL2sSB7U4_YtVLUOeV8xox731QzE")
+client.login(bot_token);("MTI1NTM0ODU2ODQ2NjY1NzI5MQ.GBrCQ7.K5jxJRY36-GvCRJDbfPRpT13q_nrIQQyUaYstc")
